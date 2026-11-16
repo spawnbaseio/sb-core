@@ -1,0 +1,8 @@
+node_modules/
+dist/
+resource/spawnbase/server/server.js
+resource/spawnbase/LICENSE
+resource/spawnbase/NOTICE
+resource/spawnbase/THIRD_PARTY_NOTICES
+resource/sb-bridge/LICENSE
+resource/sb-bridge/NOTICE

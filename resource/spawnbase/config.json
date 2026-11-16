@@ -1,0 +1,34 @@
+{
+  "media": {
+    "visibility": "private"
+  },
+  "logs": {
+    "appendPlayerIdentifiers": false,
+    "batch": {
+      "size": 100,
+      "bytes": 98304,
+      "flushMs": 2000
+    },
+    "capture": {
+      "encoding": "webp",
+      "quality": 0.9,
+      "maxWidth": 1920,
+      "maxHeight": 1080,
+      "timeoutMs": 10000
+    },
+    "chatEvents": {
+      "dataset": "chat",
+      "enabled": false
+    },
+    "console": false,
+    "enableCloudLogging": true,
+    "excludeInDepthMetadata": true,
+    "excludedPlayerIdentifiers": ["ip"],
+    "level": "info",
+    "levels": ["error", "warn", "info", "debug"],
+    "playerEvents": {
+      "dataset": "player_events",
+      "enabled": false
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "description": "Spawnbase SDK for FiveM and Node.js",
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "esbuild": "0.28.2",
+    "typescript": "^5.6.0",
+    "@eslint/js": "^9.17.0",
+    "eslint": "^9.17.0",
+    "typescript-eslint": "^8.18.1"
+  },
+  "exports": {
+    ".": "./dist/index.js",
+    "./community": {
+      "types": "./dist/community.d.ts",
+      "default": "./dist/community.js"
+    },
+    "./discord": {
+      "types": "./dist/discord.d.ts",
+      "default": "./dist/discord.js"
+    }
+  },
+  "name": "@spawnbase/sdk",
+  "private": true,
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "pack": "npm run build && node scripts/pack.mjs",
+    "prepack": "npm run build && node scripts/pack.mjs && node scripts/check.mjs",
+    "lint": "eslint --config eslint.config.mjs src scripts sb-screenshot"
+  },
+  "type": "module",
+  "version": "0.3.0",
+  "dependencies": {
+    "zod": "^4.6.7"
+  },
+  "license": "GPL-3.0-only",
+  "files": [
+    "dist/*.js",
+    "dist/*.d.ts",
+    "dist/build-lock.json",
+    "src/",
+    "scripts/",
+    "resource/**/*.lua",
+    "resource/**/config.json",
+    "integrations/",
+    "examples/",
+    "tsconfig.json",
+    "LICENSE",
+    "NOTICE",
+    "THIRD_PARTY_NOTICES",
+    "sb-screenshot/fxmanifest.lua",
+    "sb-screenshot/client.js",
+    "sb-screenshot/ui/",
+    "sb-screenshot/LICENSE",
+    "sb-screenshot/NOTICE"
+  ],
+  "types": "./dist/index.d.ts",
+  "engines": {
+    "node": ">=22"
+  },
+  "author": "Spawnbase",
+  "spawnbase": {
+    "source": {
+      "lockfile": "dist/build-lock.json",
+      "build": [
+        "Copy dist/build-lock.json to package-lock.json",
+        "npm ci --ignore-scripts",
+        "npm run pack"
+      ],
+      "directory": "."
+    },
+    "copyright": "Copyright (C) 2026 Spawnbase"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spawnbaseio/sb-core.git"
+  }
+}

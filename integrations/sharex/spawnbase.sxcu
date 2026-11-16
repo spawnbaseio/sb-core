@@ -1,0 +1,1 @@
+{"Body":"MultipartFormData","DestinationType":"ImageUploader, FileUploader","FileFormName":"file","Headers":{"Authorization":"YOUR_TOKEN"},"Name":"Spawnbase","RequestMethod":"POST","RequestType":"Upload","RequestURL":"https://api.spawnbase.io/api/v1/file","URL":"{json:data.url}","Version":"15.0.0","Arguments":{"visibility":"public"}}

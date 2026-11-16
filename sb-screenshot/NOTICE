@@ -1,0 +1,7 @@
+sb-screenshot
+Copyright (C) 2026 Spawnbase
+Distributed under GPL-3.0-only. See LICENSE.
+
+This resource uses FiveM's game-view WebGL interop protocol.
+No third-party JavaScript library is bundled.
+Runtime compatibility requires validation against the installed FiveM build.
