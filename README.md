@@ -103,10 +103,6 @@ await sdk.logs.close();
 
 `@spawnbase/sdk/community` and `@spawnbase/sdk/discord` are clients for the Community and Discord APIs. The package is not on npm yet, so build it here with `npm ci` and `npm run build` and depend on the folder.
 
-## Tested on
-
-Windows and Linux FXServer, artifact 38621, without a framework. ESX Legacy 1.16.3, QBCore 1.3.0 and Qbox 1.24.0 on Windows.
-
 ## Building
 
 ```text
